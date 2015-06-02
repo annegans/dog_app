@@ -4,6 +4,8 @@
     <div class="list-group-items"></div>
       <ul class="dog">
         <li><%= link_to(dog.name, dog_path(dog.id)) %></li>
+        <li><%= link_to('EDIT', edit_dog_path(dog.id)) %></li>
+        <li><%= link_to('DELETE', dog_path(dog.id), method: :delete) %></li>
       </ul>
     </div>
   <% end %> 
